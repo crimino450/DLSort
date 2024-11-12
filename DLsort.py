@@ -2,7 +2,6 @@ import os
 import shutil
 import subprocess
 import platform
-import json
 
 platform = platform.system()
 fileLoc = ""
