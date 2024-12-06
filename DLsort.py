@@ -66,7 +66,7 @@ if platform.system() == "Windows":
     for index, files in enumerate(downloads):
         fileLoc = fileDirDownloads + "\\" + downloads[index]
         shutil.move(fileLoc, whereToSendWin(downloads[index]))
-elif platform,system() == "Darwin":
+elif platform.system() == "Darwin":
     if len(downloads) != 0:
         fileLoc = fileDirDownloads + "/" + downloads[0]
     for index, files in enumerate(downloads):
