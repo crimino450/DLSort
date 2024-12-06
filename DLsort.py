@@ -3,7 +3,6 @@ import shutil
 import subprocess
 import platform
 
-platform = platform.system()
 fileLoc = ""
 fileDestinations = dict()
 
@@ -13,10 +12,10 @@ def getMacUser():
     return user
 
 def getFilePathDownloads():
-    if platform == "Windows":
+    if platform.system() == "Windows":
         fileNameDictWin()
         return "c:\\Users" + "\\" + os.getlogin() + "\\Downloads"
-    elif platform == "Darwin":
+    elif platform.system() == "Darwin":
         fileNameDictMac()
         return "/Users/" + getMacUser() + "/Downloads" 
 
