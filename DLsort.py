@@ -60,13 +60,13 @@ def whereToSendMac(fileName):
 fileDirDownloads = getFilePathDownloads()
 downloads = os.listdir(fileDirDownloads)
 
-if platform == "Windows":
+if platform.system() == "Windows":
     if len(downloads) != 0:
         fileLoc = fileDirDownloads + "\\" + downloads[0]
     for index, files in enumerate(downloads):
         fileLoc = fileDirDownloads + "\\" + downloads[index]
         shutil.move(fileLoc, whereToSendWin(downloads[index]))
-elif platform == "Darwin":
+elif platform,system() == "Darwin":
     if len(downloads) != 0:
         fileLoc = fileDirDownloads + "/" + downloads[0]
     for index, files in enumerate(downloads):
