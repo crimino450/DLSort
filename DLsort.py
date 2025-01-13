@@ -9,8 +9,7 @@ fileDestinations = dict()
 # Finds name of current user on Mac platform
 def getMacUser():
     command = "id -u -n"
-    user = subprocess.check_output(command, shell = True, text = True)
-    return user
+    return subprocess.check_output(command, shell = True, text = True)
 
 # Finds the file path of the default downloads folder and creates a dictionary with file extension / locations pairs
 def getFilePathDownloads():
