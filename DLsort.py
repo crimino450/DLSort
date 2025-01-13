@@ -40,12 +40,12 @@ def fileNameDictWin():
 # Creates dictionary of file extension / file location pairs for Mac OS
 def fileNameDictMac():
     macroot = "/Users/" + getMacUser()
-    fileDestinations.update(dict.fromkeys(["zip", "7z", "rar", "zipx", "pkg"], macroot + r"\Documents\Downloads\Compressed"))
-    fileDestinations.update(dict.fromkeys(["png", "jpg", "jpeg", "webp"], macroot + r"\Pictures\Downloads"))
-    fileDestinations.update(dict.fromkeys(["docx", "pdf", "odt"], macroot + r"\Documents\Downloads\Docs\Docs"))
-    fileDestinations.update(dict.fromkeys(["xlsx", "csv"], macroot + r"\Documents\Downloads\Docs\Excel"))
-    fileDestinations.update(dict.fromkeys(["txt"], macroot + r"\Documents\Downloads\Docs\Txt"))
-    fileDestinations.update(dict.fromkeys(["exe"], macroot + r"\Documents\Downloads\.exe"))
+    fileDestinations.update(dict.fromkeys(["zip", "7z", "rar", "zipx", "pkg"], macroot + r"/Documents/Downloads/Compressed"))
+    fileDestinations.update(dict.fromkeys(["png", "jpg", "jpeg", "webp"], macroot + r"/Pictures/Downloads"))
+    fileDestinations.update(dict.fromkeys(["docx", "pdf", "odt"], macroot + r"/Documents/Downloads/Docs/Docs"))
+    fileDestinations.update(dict.fromkeys(["xlsx", "csv"], macroot + r"/Documents/Downloads/Docs/Excel"))
+    fileDestinations.update(dict.fromkeys(["txt"], macroot + r"/Documents/Downloads/Docs/Txt"))
+    fileDestinations.update(dict.fromkeys(["exe"], macroot + r"/Documents/Downloads/.exe"))
 
 # Gets file location from extension using the dicitonary
 def whereToSendWin(fileName):
